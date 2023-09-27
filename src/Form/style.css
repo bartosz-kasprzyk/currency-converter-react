@@ -1,0 +1,82 @@
+.form__calculator {
+    max-width: 600px;
+    margin: 50px auto 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%, 90%);
+}
+
+.form__currencyBar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.form__currency {
+    padding: 10px;
+    margin: auto;
+}
+
+.form__currencySelector {
+    margin-left: 5px;
+}
+
+.form__title {
+    border: 1px solid hsl(0, 0%, 0%);
+    background-color: hsl(167, 90%, 21%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 93%);
+    padding: 10px 15px;
+}
+
+.form__amountBar {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin: 20px auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.form__amount {
+    margin-top: 5px;
+    max-width: 250px;
+    width: 100%;
+    height: 40px;
+}
+
+.form__footnote {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 59%, 46%);
+}
+
+.form__required {
+    color: hsl(0, 59%, 46%);
+}
+
+.form__button {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: hsl(167, 90%, 21%);
+    color: hsl(0, 0%, 93%);
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    background-color: hsl(167, 90%, 17%);
+}
+
+.form__button:active {
+    background-color: hsl(167, 90%, 13%);
+}
+
+.form__result {
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%, 90%);
+}
