@@ -7,8 +7,11 @@
 }
 
 .form__currencyBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 20px auto;
     text-align: center;
+    max-width: 280px;
 }
 
 .form__currency {
