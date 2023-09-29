@@ -1,5 +1,9 @@
 # Currency Calculator
 
+## Demo
+
+https://bartek-kasprzyk.github.io/currency-converter-react/
+
 ## Description
 
 This website is a currency conversion tool that lets you calculate different currencies. It's a prototype, so it only works for EUR, USD and PLN.
@@ -18,10 +22,6 @@ Project was created with technologies such as:
 * ES6+ features
 * React
 * Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
-
-## Demo
-
-https://bartek-kasprzyk.github.io/currency-converter-react/
 
 ## Available Scripts
 
