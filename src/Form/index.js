@@ -11,8 +11,8 @@ const Form = () => {
     const [resultCurrency, setResultCurrency] = useState("");
 
     const calculateResult = (from, to, amount) => {
-        const fromCurrency = currencies.find((currency) => currency.id === from);
-        const toCurrency = currencies.find((currency) => currency.id === to);
+        const fromCurrency = currencies.find(({id}) => id === from);
+        const toCurrency = currencies.find(({id}) => id === to);
         return amount * fromCurrency.rate / toCurrency.rate;
     };
 
