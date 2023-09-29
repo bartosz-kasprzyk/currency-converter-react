@@ -3,17 +3,6 @@ import { currencies } from "../currencies.js";
 import "./style.css";
 
 const Form = () => {
-    const EURtoPLN = 4.47;
-    const EURtoUSD = 1.08;
-    const EURtoEUR = 1;
-
-    const USDtoPLN = 4.14;
-    const USDtoEUR = 0.93;
-    const USDtoUSD = 1;
-
-    const PLNtoEUR = 0.22;
-    const PLNtoUSD = 0.24;
-    const PLNtoPLN = 1;
 
     const [from, setFrom] = useState("EUR");
     const [to, setTo] = useState("PLN");
@@ -22,31 +11,9 @@ const Form = () => {
     const [resultCurrency, setResultCurrency] = useState("");
 
     const calculateResult = (from, to, amount) => {
-        if (from === "EUR") {
-            if (to === "PLN") {
-                return amount * EURtoPLN;
-            } else if (to === "USD") {
-                return amount * EURtoUSD;
-            } else {
-                return amount * EURtoEUR;
-            }
-        } else if (from === "USD") {
-            if (to === "PLN") {
-                return amount * USDtoPLN;
-            } else if (to === "EUR") {
-                return amount * USDtoEUR;
-            } else {
-                return amount * USDtoUSD;
-            }
-        } else {
-            if (to === "EUR") {
-                return amount * PLNtoEUR;
-            } else if (to === "USD") {
-                return amount * PLNtoUSD;
-            } else {
-                return amount * PLNtoPLN;
-            }
-        }
+        const fromCurrency = currencies.find((currency) => currency.id === from);
+        const toCurrency = currencies.find((currency) => currency.id === to);
+        return amount * fromCurrency.rate / toCurrency.rate;
     };
 
     const onFormSubmit = (event) => {
