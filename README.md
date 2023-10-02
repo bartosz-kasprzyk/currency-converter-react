@@ -10,11 +10,11 @@ This website is a currency conversion tool that lets you calculate different cur
 
 Keep an eye out for future changes!
 
-![preview](/public/currency-converter.gif)
+![preview](currency-converter.gif)
 
 Want to use it on your phone? It's also mobile-friendly!
 
-![preview on mobile](/public/currency-converter-mobile.gif)
+![preview on mobile](currency-converter-mobile.gif)
 
 Project was created with technologies such as:
 * BEM
