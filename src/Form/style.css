@@ -7,6 +7,20 @@
     margin: -15px 0 35px 5px;
 }
 
+@media (max-width: 767px) {
+    .form__date {
+        grid-template-columns: 190px;
+        justify-content: end;
+        margin: -10px -5px 35px 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    .form__date {
+        margin: -0px -15px 35px 5px;
+    }
+}
+
 .form__calculator {
     max-width: 600px;
     margin: 50px auto 20px;
