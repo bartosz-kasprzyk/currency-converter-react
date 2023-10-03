@@ -1,6 +1,6 @@
 .form__date {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     justify-items: end;
     font-family: 'Martian Mono', monospace;
     font-size: 10px;
@@ -9,13 +9,13 @@
 
 @media (max-width: 767px) {
     .form__date {
-        grid-template-columns: 190px;
+        grid-template-columns: 1fr;
         justify-content: end;
         margin: -10px -5px 35px 5px;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 400px) {
     .form__date {
         margin: -0px -15px 35px 5px;
     }

@@ -10,9 +10,8 @@ const Form = () => {
     const [result, setResult] = useState("N/A");
     const [resultCurrency, setResultCurrency] = useState("");
     const [date, setDate] = useState(new Date());
-    const dateOptions = { weekday: "long", day: "numeric", month: "long" };
-    const timeOptions = { hour: "numeric", minute: "numeric", second: "numeric" };
-    const localeDate = date.toLocaleDateString(undefined, dateOptions)+", "+date.toLocaleTimeString(undefined, timeOptions);
+    const localeDate1 = date.toLocaleDateString(undefined, { weekday: "long"});
+    const localeDate2 = date.toLocaleDateString(undefined, {day: "numeric", month: "long" })+", "+date.toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric", second: "numeric" });
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -41,7 +40,12 @@ const Form = () => {
             <fieldset className="form__calculator">
                 <legend className="form__title">Kalkulator walut</legend>
                 <div className="form__date">
-                    Dzisiaj jest {localeDate}
+                    <span>
+                        Dzisiaj jest {localeDate1},&nbsp;
+                    </span>
+                    <span>
+                        {localeDate2}&nbsp;
+                    </span>
                 </div>
                 <div className="form__currencyBar">
                     <label className="form__currency">
