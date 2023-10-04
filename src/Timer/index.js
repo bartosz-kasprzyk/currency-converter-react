@@ -17,7 +17,7 @@ const Timer = () => {
     }, []);
 
     return (
-        <div className="form__date">
+        <div className="timer">
             <span>
                 Dzisiaj jest {localeDate1},&nbsp;
             </span>

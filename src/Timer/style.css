@@ -1,4 +1,4 @@
-.form__date {
+.timer {
     display: grid;
     grid-template-columns: 1fr auto;
     justify-items: end;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 767px) {
-    .form__date {
+    .timer {
         grid-template-columns: 1fr;
         justify-content: end;
         margin: -10px -5px 35px 5px;
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 400px) {
-    .form__date {
+    .timer {
         margin: -0px -15px 35px 5px;
     }
 }
