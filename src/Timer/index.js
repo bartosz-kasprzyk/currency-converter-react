@@ -19,10 +19,10 @@ const Timer = () => {
     return (
         <div className="timer">
             <span>
-                Dzisiaj jest {localeDate1},&nbsp;
+                Dzisiaj jest {localeDate1},
             </span>
             <span>
-                {localeDate2}&nbsp;
+                {localeDate2}
             </span>
         </div>
     );

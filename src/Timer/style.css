@@ -11,12 +11,12 @@
     .timer {
         grid-template-columns: 1fr;
         justify-content: end;
-        margin: -10px -5px 35px 5px;
+        margin: -10px 0 35px 5px;
     }
 }
 
 @media (max-width: 400px) {
     .timer {
-        margin: -0px -15px 35px 5px;
+        margin: -0px -5px 35px 5px;
     }
 }
