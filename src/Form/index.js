@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { currencies } from "../currencies.js";
+import Timer from "../Timer";
 import "./style.css";
 
 const Form = () => {
@@ -9,19 +10,6 @@ const Form = () => {
     const [amount, setAmount] = useState("");
     const [result, setResult] = useState("N/A");
     const [resultCurrency, setResultCurrency] = useState("");
-    const [date, setDate] = useState(new Date());
-    const localeDate1 = date.toLocaleDateString(undefined, { weekday: "long"});
-    const localeDate2 = date.toLocaleDateString(undefined, {day: "numeric", month: "long" })+", "+date.toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric", second: "numeric" });
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDate(new Date());
-        }, 1000);
-
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, []);
 
     const calculateResult = (from, to, amount) => {
         const fromCurrency = currencies.find(({ id }) => id === from);
@@ -39,14 +27,7 @@ const Form = () => {
         <form onSubmit={onFormSubmit}>
             <fieldset className="form__calculator">
                 <legend className="form__title">Kalkulator walut</legend>
-                <div className="form__date">
-                    <span>
-                        Dzisiaj jest {localeDate1},&nbsp;
-                    </span>
-                    <span>
-                        {localeDate2}&nbsp;
-                    </span>
-                </div>
+                 <Timer />
                 <div className="form__currencyBar">
                     <label className="form__currency">
                         Mam:

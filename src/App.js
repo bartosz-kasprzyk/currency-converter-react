@@ -1,10 +1,13 @@
 import Form from "./Form";
+import Timer from "./Timer";
 import Container from "./Container";
 
 function App() {
   return (
     <Container>
-      <Form />
+      <Form>
+        <Timer />
+      </Form>
     </Container>
   );
 }
