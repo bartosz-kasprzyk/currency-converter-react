@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import { currencies } from "../currencies.js";
 import Timer from "../Timer";
 import { Calculator, Title, CurrencyBar, Currency, CurrencySelector, AmountBar, Required, Amount, Footnote, Button, Result } from "./styled";
@@ -27,7 +27,7 @@ const Form = () => {
         <form onSubmit={onFormSubmit}>
             <Calculator>
                 <Title>Kalkulator walut</Title>
-                 <Timer />
+                <Timer />
                 <CurrencyBar>
                     <Currency>
                         Mam:
