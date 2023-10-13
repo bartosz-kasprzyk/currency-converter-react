@@ -1,62 +1,64 @@
-.form__calculator {
+import styled from "styled-components";
+
+export const Calculator = styled.fieldset`
     max-width: 600px;
     margin: 50px auto 20px;
     padding: 10px 20px;
     border-radius: 5px;
     background: hsl(0, 0%, 100%, 90%);
-}
+`
 
-.form__currencyBar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px auto;
-    text-align: center;
-    max-width: 280px;
-}
-
-.form__currency {
-    padding: 10px;
-    margin: auto;
-}
-
-.form__currencySelector {
-    margin-left: 5px;
-}
-
-.form__title {
+export const Title = styled.legend`
     border: 1px solid hsl(0, 0%, 0%);
     background-color: hsl(167, 90%, 21%);
     border-radius: 5px;
     color: hsl(0, 0%, 93%);
     padding: 10px 15px;
-}
+`
 
-.form__amountBar {
+export const CurrencyBar = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 280px;
+`
+
+export const Currency = styled.label`
+    padding: 10px;
+    margin: auto;
+`
+
+export const CurrencySelector = styled.select`
+    margin-left: 5px;
+`
+
+export const AmountBar = styled.label`
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
     margin: 20px auto;
     justify-items: center;
-}
+`
 
-.form__amount {
+export const Required = styled.span`
+    color: hsl(0, 59%, 46%);
+`
+
+export const Amount = styled.input`
     margin-top: 5px;
     max-width: 250px;
     width: 100%;
     height: 40px;
-}
+`
 
-.form__footnote {
+export const Footnote = styled.div`
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: hsl(0, 59%, 46%);
-}
+`
 
-.form__required {
-    color: hsl(0, 59%, 46%);
-}
-
-.form__button {
+export const Button = styled.button`
     display: block;
     width: 100%;
     max-width: 600px;
@@ -65,17 +67,17 @@
     background-color: hsl(167, 90%, 21%);
     color: hsl(0, 0%, 93%);
     border-radius: 5px;
-}
 
-.form__button:hover {
-    background-color: hsl(167, 90%, 17%);
-}
+    &:hover {
+        background-color: hsl(167, 90%, 17%);
+    }
 
-.form__button:active {
-    background-color: hsl(167, 90%, 13%);
-}
+    &:active {
+        background-color: hsl(167, 90%, 13%);
+    }
+`
 
-.form__result {
+export const Result = styled.div`
     padding: 10px;
     max-width: 600px;
     margin: 20px auto;
@@ -84,4 +86,4 @@
     border-color: hsl(0, 0%, 75%);
     border-radius: 5px;
     background: hsl(0, 0%, 100%, 90%);
-}
+`

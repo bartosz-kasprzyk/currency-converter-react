@@ -1,7 +1,7 @@
 import { useState} from "react";
 import { currencies } from "../currencies.js";
 import Timer from "../Timer";
-import "./style.css";
+import { Calculator, Title, CurrencyBar, Currency, CurrencySelector, AmountBar, Required, Amount, Footnote, Button, Result } from "./styled";
 
 const Form = () => {
 
@@ -25,14 +25,13 @@ const Form = () => {
 
     return (
         <form onSubmit={onFormSubmit}>
-            <fieldset className="form__calculator">
-                <legend className="form__title">Kalkulator walut</legend>
+            <Calculator>
+                <Title>Kalkulator walut</Title>
                  <Timer />
-                <div className="form__currencyBar">
-                    <label className="form__currency">
+                <CurrencyBar>
+                    <Currency>
                         Mam:
-                        <select
-                            className="form__currencySelector"
+                        <CurrencySelector
                             name="from"
                             value={from}
                             onChange={({ target }) => setFrom(target.value)}
@@ -42,12 +41,11 @@ const Form = () => {
                                     {currency.id}
                                 </option>
                             ))}
-                        </select>
-                    </label>
-                    <label className="form__currency">
+                        </CurrencySelector>
+                    </Currency>
+                    <Currency>
                         Chcę:
-                        <select
-                            className="form__currencySelector"
+                        <CurrencySelector
                             name="to"
                             value={to}
                             onChange={({ target }) => setTo(target.value)}
@@ -57,16 +55,15 @@ const Form = () => {
                                     {currency.id}
                                 </option>
                             ))}
-                        </select>
-                    </label>
-                </div>
-                <label className="form__amountBar">
+                        </CurrencySelector>
+                    </Currency>
+                </CurrencyBar>
+                <AmountBar>
                     <span>
-                        Kwota, którą chcę wymienić<span className="form__required">*</span>:
+                        Kwota, którą chcę wymienić<Required>*</Required>:
                     </span>
-                    <input
+                    <Amount
                         type="number"
-                        className="form__amount"
                         name="amount"
                         required
                         min="1"
@@ -74,18 +71,18 @@ const Form = () => {
                         placeholder="Podaj kwotę"
                         onChange={({ target }) => setAmount(target.value)}
                     />
-                </label>
-                <div className="form__footnote">
+                </AmountBar>
+                <Footnote>
                     Pola wymagane oznaczone są *.
-                </div>
-            </fieldset>
-            <button className="form__button">Przelicz!</button>
-            <div className="form__result">
+                </Footnote>
+            </Calculator>
+            <Button>Przelicz!</Button>
+            <Result>
                 <span>Kwota po przeliczeniu: </span>
                 <strong>
                     {typeof (result) === "string" ? result : Number(result).toFixed(2)} {resultCurrency}
                 </strong>
-            </div>
+            </Result>
         </form >
     );
 };
