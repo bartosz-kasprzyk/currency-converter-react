@@ -9,7 +9,8 @@ const theme = {
             opaque: "hsl(0, 0%, 100%)",
             transparent: "hsl(0, 0%, 100%, 90%)",
         },
-        attentionColor : "hsl(0, 59%, 46%)"
+        borderColor: "hsl(0, 0%, 0%)",
+        attentionColor : "hsl(0, 59%, 46%)",
     },
     breakpoints: {
         tablet: 767,

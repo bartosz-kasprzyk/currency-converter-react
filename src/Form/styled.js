@@ -9,7 +9,7 @@ export const Calculator = styled.fieldset`
 `
 
 export const Title = styled.legend`
-    border: 1px solid hsl(0, 0%, 0%);
+    border: 1px solid ${({theme}) => theme.colors.borderColor};
     background-color: ${({theme}) => theme.colors.primaryColor.light};
     border-radius: 5px;
     color: ${({theme}) => theme.colors.canvasColor.transparent};
