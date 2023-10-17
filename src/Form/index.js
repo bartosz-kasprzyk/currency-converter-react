@@ -4,7 +4,6 @@ import Timer from "../Timer";
 import { Calculator, Title, CurrencyBar, Currency, CurrencySelector, AmountBar, Required, Amount, Footnote, Button, Result } from "./styled";
 
 const Form = () => {
-
     const [from, setFrom] = useState("EUR");
     const [to, setTo] = useState("PLN");
     const [amount, setAmount] = useState("");
@@ -14,6 +13,7 @@ const Form = () => {
     const calculateResult = (from, to, amount) => {
         const fromCurrency = currencies.find(({ id }) => id === from);
         const toCurrency = currencies.find(({ id }) => id === to);
+        
         return amount * fromCurrency.rate / toCurrency.rate;
     };
 
