@@ -13,8 +13,8 @@ const theme = {
         attentionColor : "hsl(0, 59%, 46%)",
     },
     breakpoints: {
-        tablet: 767,
-        phone: 400,
+        tablet: "767px",
+        phone: "400px",
     }
 };
 
