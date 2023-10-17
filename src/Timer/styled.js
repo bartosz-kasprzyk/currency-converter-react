@@ -16,7 +16,7 @@ export const Clock = styled.div`
     }
 
     @media (max-width: 400px) {
-        margin: -0px -5px 35px 5px;
+        margin: 0 -5px 35px 5px;
     }
 `
 

@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 
 export const useCurrentDate = () => {
     const [date, setDate] = useState(new Date());
-    const localeDate1 = date.toLocaleDateString(undefined, { weekday: "long" });
-    const localeDate2 = date.toLocaleDateString(undefined, { day: "numeric", month: "long" }) + ", " + date.toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric", second: "numeric" });
+    const longNameOfWeekDay = date.toLocaleDateString(undefined, { weekday: "long" });
+    const dayWithMonth = date.toLocaleDateString(undefined, { day: "numeric", month: "long" });
+    const numericTime = date.toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric", second: "numeric" });
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -15,7 +16,6 @@ export const useCurrentDate = () => {
         };
     }, []);
 
-    return { date, localeDate1, localeDate2 };
+    return { longNameOfWeekDay, dayWithMonth, numericTime };
 };
-
 

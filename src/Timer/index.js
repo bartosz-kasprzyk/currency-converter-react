@@ -3,17 +3,18 @@ import { useCurrentDate } from "./useCurrentDate";
 
 const Timer = () => {
     const {
-        localeDate1,
-        localeDate2,
+        longNameOfWeekDay,
+        dayWithMonth,
+        numericTime
     } = useCurrentDate();
 
     return (
         <Clock>
             <span>
-                Dzisiaj jest {localeDate1},
+                Dzisiaj jest {longNameOfWeekDay},
             </span>
             <span>
-                {localeDate2}
+                {dayWithMonth}, {numericTime}
             </span>
         </Clock>
     );
