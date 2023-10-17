@@ -5,14 +5,14 @@ export const Calculator = styled.fieldset`
     margin: 50px auto 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    background: hsl(0, 0%, 100%, 90%);
+    background: ${({theme}) => theme.colors.canvasColor.transparent};
 `
 
 export const Title = styled.legend`
     border: 1px solid hsl(0, 0%, 0%);
-    background-color: hsl(167, 90%, 21%);
+    background-color: ${({theme}) => theme.colors.primaryColor.light};
     border-radius: 5px;
-    color: hsl(0, 0%, 93%);
+    color: ${({theme}) => theme.colors.canvasColor.transparent};
     padding: 10px 15px;
 `
 
@@ -42,7 +42,7 @@ export const AmountBar = styled.label`
 `
 
 export const Required = styled.span`
-    color: hsl(0, 59%, 46%);
+    color: ${({theme}) => theme.colors.attentionColor};
 `
 
 export const Amount = styled.input`
@@ -55,7 +55,7 @@ export const Amount = styled.input`
 export const Footnote = styled.div`
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    color: hsl(0, 59%, 46%);
+    color: ${({theme}) => theme.colors.attentionColor};
 `
 
 export const Button = styled.button`
@@ -64,16 +64,16 @@ export const Button = styled.button`
     max-width: 600px;
     margin: 10px auto;
     padding: 10px;
-    background-color: hsl(167, 90%, 21%);
-    color: hsl(0, 0%, 93%);
+    background-color: ${({theme}) => theme.colors.primaryColor.light};
+    color: ${({theme}) => theme.colors.canvasColor.transparent};;
     border-radius: 5px;
 
     &:hover {
-        background-color: hsl(167, 90%, 17%);
+        background-color: ${({theme}) => theme.colors.primaryColor.medium};
     }
 
     &:active {
-        background-color: hsl(167, 90%, 13%);
+        background-color: ${({theme}) => theme.colors.primaryColor.dark};
     }
 `
 
