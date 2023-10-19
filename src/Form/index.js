@@ -80,7 +80,7 @@ const Form = () => {
             <Result>
                 <span>Kwota po przeliczeniu: </span>
                 <strong>
-                    {typeof (result) === "string" ? result : Number(result).toFixed(2)} {resultCurrency}
+                    {typeof (result) === "string" ? result : Number(result).toFixed(2)}&nbsp;{resultCurrency}
                 </strong>
             </Result>
         </form >
