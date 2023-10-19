@@ -5,14 +5,14 @@ export const Calculator = styled.fieldset`
     margin: 50px auto 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    background: ${({theme}) => theme.colors.canvasColor.transparent};
+    background: ${({theme}) => theme.colors.white.transparent};
 `
 
 export const Title = styled.legend`
-    border: 1px solid ${({theme}) => theme.colors.borderColor};
-    background-color: ${({theme}) => theme.colors.primaryColor.light};
+    border: 1px solid ${({theme}) => theme.colors.black};
+    background-color: ${({theme}) => theme.colors.primaryColor};
     border-radius: 5px;
-    color: ${({theme}) => theme.colors.canvasColor.transparent};
+    color: ${({theme}) => theme.colors.white.transparent};
     padding: 10px 15px;
 `
 
@@ -42,7 +42,7 @@ export const AmountBar = styled.label`
 `
 
 export const Required = styled.span`
-    color: ${({theme}) => theme.colors.attentionColor};
+    color: ${({theme}) => theme.colors.red};
 `
 
 export const Amount = styled.input`
@@ -55,7 +55,7 @@ export const Amount = styled.input`
 export const Footnote = styled.div`
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    color: ${({theme}) => theme.colors.attentionColor};
+    color: ${({theme}) => theme.colors.red};
 `
 
 export const Button = styled.button`
@@ -64,16 +64,16 @@ export const Button = styled.button`
     max-width: 600px;
     margin: 10px auto;
     padding: 10px;
-    background-color: ${({theme}) => theme.colors.primaryColor.light};
-    color: ${({theme}) => theme.colors.canvasColor.transparent};;
+    background-color: ${({theme}) => theme.colors.primaryColor};
+    color: ${({theme}) => theme.colors.white.transparent};;
     border-radius: 5px;
 
     &:hover {
-        background-color: ${({theme}) => theme.colors.primaryColor.medium};
+        filter: brightness(90%);
     }
 
     &:active {
-        background-color: ${({theme}) => theme.colors.primaryColor.dark};
+        filter: brightness(80%);
     }
 `
 
