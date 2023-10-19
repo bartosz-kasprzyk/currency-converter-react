@@ -1,16 +1,12 @@
 const theme = {
     colors: {
-        primaryColor: {
-            light: "hsl(167, 90%, 21%)",
-            medium: "hsl(167, 90%, 17%)",
-            dark: "hsl(167, 90%, 13%)",
-        },
-        canvasColor: {
+        primaryColor: "hsl(167, 90%, 21%)",
+        white: {
             opaque: "hsl(0, 0%, 100%)",
             transparent: "hsl(0, 0%, 100%, 90%)",
         },
-        borderColor: "hsl(0, 0%, 0%)",
-        attentionColor : "hsl(0, 59%, 46%)",
+        black: "hsl(0, 0%, 0%)",
+        red : "hsl(0, 59%, 46%)",
     },
     breakpoints: {
         tablet: "767px",
