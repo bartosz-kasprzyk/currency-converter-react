@@ -1,4 +1,4 @@
-const theme = {
+export const theme = {
     colors: {
         primaryColor: "hsl(167, 90%, 21%)",
         white: {
@@ -7,11 +7,10 @@ const theme = {
         },
         black: "hsl(0, 0%, 0%)",
         red : "hsl(0, 59%, 46%)",
+        gray : "hsl(0, 0%, 75%)",
     },
     breakpoints: {
         tablet: "767px",
         phone: "400px",
     }
 };
-
-export default theme

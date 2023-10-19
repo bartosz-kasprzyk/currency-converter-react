@@ -83,7 +83,7 @@ export const Result = styled.div`
     margin: 20px auto;
     border-width: 2px;
     border-style: groove;
-    border-color: hsl(0, 0%, 75%);
+    border-color: ${({theme}) => theme.colors.gray};
     border-radius: 5px;
-    background: hsl(0, 0%, 100%, 90%);
+    background: ${({theme}) => theme.colors.white.transparent};
 `
