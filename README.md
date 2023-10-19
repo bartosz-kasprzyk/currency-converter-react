@@ -22,6 +22,8 @@ Project was created with technologies such as:
 * ES6+ features
 * React
 * Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
+* Custom hooks
+* Styled components
 
 ## Available Scripts
 
