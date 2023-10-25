@@ -6,7 +6,17 @@ https://bartek-kasprzyk.github.io/currency-converter-react/
 
 ## Description
 
-This website is a currency conversion tool that lets you calculate different currencies. It's a prototype, so it only works for EUR, USD and PLN.
+This website is a currency conversion tool that lets you calculate different currencies. Here's a list of currencies you can convert:
+* AUD (Australian dollar)
+* CAD (Canadian dollar)
+* CHF (Swiss franc)
+* EUR (Euro)
+* GBP (Pound sterling)
+* HKD (Hong Kong dollar)
+* JPY (Japanese yen)
+* NZD (New Zealand dollar)
+* PLN (Polish zloty)
+* USD (US dollar)
 
 Keep an eye out for future changes!
 
