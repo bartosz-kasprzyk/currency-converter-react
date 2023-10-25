@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { currencies } from "../currencies.js";
 import Timer from "../Timer";
 import { Calculator, Title, Loading, Error, CurrencyBar, Currency, CurrencySelector, AmountBar, Required, Amount, RequiredInfo, Button, Result, Footnote } from "./styled";
 import { useRatesData } from "./useRatesData";
