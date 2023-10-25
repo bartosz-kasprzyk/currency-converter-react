@@ -16,7 +16,7 @@ Want to use it on your phone? It's also mobile-friendly!
 
 ![preview on mobile](/currency-converter-mobile.gif)
 
-If you've encountered such error
+If you've encountered such error:
 
 ![error](/error.png)
 
