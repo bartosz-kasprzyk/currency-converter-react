@@ -8,6 +8,7 @@ export const theme = {
         black: "hsl(0, 0%, 0%)",
         red : "hsl(0, 59%, 46%)",
         gray : "hsl(0, 0%, 75%)",
+        green : "hsl(146, 50%, 36%)",
     },
     breakpoints: {
         tablet: "767px",
