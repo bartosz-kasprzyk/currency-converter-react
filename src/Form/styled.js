@@ -5,14 +5,28 @@ export const Calculator = styled.fieldset`
     margin: 50px auto 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    background: ${({theme}) => theme.colors.white.transparent};
+    background: ${({ theme }) => theme.colors.white.transparent};
 `
 
 export const Title = styled.legend`
-    border: 1px solid ${({theme}) => theme.colors.black};
-    background-color: ${({theme}) => theme.colors.primaryColor};
+    border: 1px solid ${({ theme }) => theme.colors.black};
+    background-color: ${({ theme }) => theme.colors.primaryColor};
     border-radius: 5px;
-    color: ${({theme}) => theme.colors.white.transparent};
+    color: ${({ theme }) => theme.colors.white.transparent};
+    padding: 10px 15px;
+`
+
+export const Loading = styled.div`
+    text-align: center;
+    background-color: ${({ theme }) => theme.colors.white.transparent};
+    color: ${({ theme }) => theme.colors.green};
+    padding: 10px 15px;
+`
+
+export const Error = styled.div`
+    text-align: center;
+    background-color: ${({ theme }) => theme.colors.white.transparent};
+    color: ${({ theme }) => theme.colors.red};
     padding: 10px 15px;
 `
 
@@ -21,7 +35,7 @@ export const CurrencyBar = styled.div`
     grid-template-columns: 1fr 1fr;
     margin: 20px auto;
     text-align: center;
-    max-width: 280px;
+    max-width: 300px;
 `
 
 export const Currency = styled.label`
@@ -42,7 +56,7 @@ export const AmountBar = styled.label`
 `
 
 export const Required = styled.span`
-    color: ${({theme}) => theme.colors.red};
+    color: ${({ theme }) => theme.colors.red};
 `
 
 export const Amount = styled.input`
@@ -52,10 +66,9 @@ export const Amount = styled.input`
     height: 40px;
 `
 
-export const Footnote = styled.div`
-    font-family: 'Lato', sans-serif;
+export const RequiredInfo = styled.div`
     font-size: 15px;
-    color: ${({theme}) => theme.colors.red};
+    color: ${({ theme }) => theme.colors.red};
 `
 
 export const Button = styled.button`
@@ -64,8 +77,8 @@ export const Button = styled.button`
     max-width: 600px;
     margin: 10px auto;
     padding: 10px;
-    background-color: ${({theme}) => theme.colors.primaryColor};
-    color: ${({theme}) => theme.colors.white.transparent};;
+    background-color: ${({ theme }) => theme.colors.primaryColor};
+    color: ${({ theme }) => theme.colors.white.transparent};;
     border-radius: 5px;
 
     &:hover {
@@ -83,7 +96,14 @@ export const Result = styled.div`
     margin: 20px auto;
     border-width: 2px;
     border-style: groove;
-    border-color: ${({theme}) => theme.colors.gray};
+    border-color: ${({ theme }) => theme.colors.gray};
     border-radius: 5px;
-    background: ${({theme}) => theme.colors.white.transparent};
+    background: ${({ theme }) => theme.colors.white.transparent};
+`
+
+export const Footnote = styled.div`
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 12px;
 `
