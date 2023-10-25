@@ -16,6 +16,12 @@ Want to use it on your phone? It's also mobile-friendly!
 
 ![preview on mobile](/currency-converter-mobile.gif)
 
+If you've encountered such error
+
+![error](/error.png)
+
+check your internet connection. If you're connected to the internet - try again later.
+
 Project was created with technologies such as:
 * BEM
 * Grid
