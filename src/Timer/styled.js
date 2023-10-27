@@ -18,5 +18,5 @@ export const Clock = styled.div`
     @media (max-width: ${({theme}) => theme.breakpoints.phone}) {
         margin: 0 -5px 35px 5px;
     }
-`
+`;
 
