@@ -17,8 +17,8 @@ This website is a currency conversion tool that lets you calculate different cur
 * NZD (New Zealand dollar)
 * PLN (Polish zloty)
 * USD (US dollar)
-
-Keep an eye out for future changes!
+  
+(live exchange rates downloaded from <i>currencyapi.com</i>)
 
 ![preview](/currency-converter.gif)
 
@@ -36,6 +36,8 @@ Project was created with technologies such as:
 * Styled components
 * Axios
 * Async/await
+
+Keep an eye out for future changes!
 
 ## Troubleshooting
 
