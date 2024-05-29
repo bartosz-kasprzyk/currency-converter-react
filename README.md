@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://bartek-kasprzyk.github.io/currency-converter-react/
+https://bartosz-kasprzyk.github.io/currency-converter-react/
 
 ## Description
 
