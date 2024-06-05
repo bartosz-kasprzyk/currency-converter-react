@@ -26,6 +26,8 @@ Want to use it on your phone? It's also mobile-friendly!
 
 ![preview on mobile](/public/currency-converter-mobile.gif)
 
+## Technologies
+
 Project was created with technologies such as:
 * BEM
 * Grid
@@ -36,8 +38,6 @@ Project was created with technologies such as:
 * Styled components
 * Axios
 * Async/await
-
-Keep an eye out for future changes!
 
 ## Troubleshooting
 
