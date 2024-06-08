@@ -20,11 +20,13 @@ This website is a currency conversion tool that lets you calculate different cur
   
 (live exchange rates downloaded from <i>currencyapi.com</i>)
 
-![preview](/currency-converter.gif)
+![preview](/public/currency-converter.gif)
 
 Want to use it on your phone? It's also mobile-friendly!
 
-![preview on mobile](/currency-converter-mobile.gif)
+![preview on mobile](/public/currency-converter-mobile.gif)
+
+## Technologies
 
 Project was created with technologies such as:
 * BEM
@@ -36,8 +38,6 @@ Project was created with technologies such as:
 * Styled components
 * Axios
 * Async/await
-
-Keep an eye out for future changes!
 
 ## Troubleshooting
 
@@ -81,6 +81,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Author
 
-This project was created by Bartosz Kasprzyk. Please feel free to contact me if you need any further information.
+<p align="center">
+  <a href="https://bartosz-kasprzyk.github.io/homepage/">
+    <img width="300px" src="/public/drawingsignature.png" />
+  </a>
+</p>
+
+This project was created by [Bartosz Kasprzyk](https://github.com/bartosz-kasprzyk). Please feel free to contact me if you need any further information.
 
 Thank you for visiting my website!
