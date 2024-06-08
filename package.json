@@ -2,7 +2,7 @@
   "name": "currency-converter-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bartek-kasprzyk.github.io/currency-converter-react/",
+  "homepage": "https://bartosz-kasprzyk.github.io/currency-converter-react/",
   "dependencies": {
     "@everapi/currencyapi-js": "^1.0.6",
     "@testing-library/jest-dom": "^5.17.0",
