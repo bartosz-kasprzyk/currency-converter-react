@@ -1,4 +1,4 @@
-# <img width="30px" src="/public/icon.png" />urrency <img width="30px" src="/public/icon.png" />alculator
+# <img width="30px" src="/public/icon.png" /> Currency Calculator
 
 ## Demo
 
