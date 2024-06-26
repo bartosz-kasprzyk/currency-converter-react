@@ -12,10 +12,10 @@ const Form = () => {
     const [resultCurrency, setResultCurrency] = useState("");
 
     const calculateResult = (from, to, amount) => {
-        const fromCurrency = Object.keys(ratesData.ratesData.currencyData).find(( currency ) => currency === from);
-        const toCurrency = Object.keys(ratesData.ratesData.currencyData).find(( currency ) => currency === to);
+        const fromCurrency = Object.keys(ratesData.ratesData.currencyData).find((currency) => currency === from);
+        const toCurrency = Object.keys(ratesData.ratesData.currencyData).find((currency) => currency === to);
 
-        return amount * ratesData.ratesData.currencyData[fromCurrency].value / ratesData.ratesData.currencyData[toCurrency].value;
+        return amount * ratesData.ratesData.currencyData[toCurrency].value / ratesData.ratesData.currencyData[fromCurrency].value;
     };
 
     const onFormSubmit = (event) => {
