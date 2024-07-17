@@ -89,4 +89,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 This project was created by [Bartosz Kasprzyk](https://github.com/bartosz-kasprzyk). Please feel free to contact me if you need any further information.
 
-Thank you for visiting my website!
+Thank you for visiting my website! ✨
