@@ -43,7 +43,7 @@ Project was created with technologies such as:
 
 If you've encountered such error:
 
-![error](/error.png)
+![error](/public/error.png)
 
 check your internet connection. If you're connected to the internet - try again later.
 
