@@ -26,6 +26,14 @@ Want to use it on your phone? It's also mobile-friendly!
 
 ![preview on mobile](/public/currency-converter-mobile.gif)
 
+## How to use
+
+The app is very straightforward and easy to use, all you need to do is
+
+1. Choose a currency you want to convert from (Mam:)
+2. Choose a currency you want to convert to (Chcę:)
+3. Type in the amount and press "Przelicz!"
+
 ## Technologies
 
 Project was created with technologies such as:
