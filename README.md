@@ -6,7 +6,7 @@ https://bartosz-kasprzyk.github.io/currency-converter-react/
 
 ## Description
 
-This website is a currency conversion tool that lets you calculate different currencies. Here's a list of currencies you can convert:
+This currency conversion tool allows you to calculate different currencies with ease. It includes a feature that shows the current date and time, along with the date from which the exchange rates are sourced. This ensures your conversions are based on the latest rates. Below is a list of currencies you can convert:
 * AUD (Australian dollar)
 * CAD (Canadian dollar)
 * CHF (Swiss franc)
